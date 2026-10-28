@@ -4,11 +4,19 @@
 
 静的 HTML＋CSS のみです（JavaScript・外部 CDN・Web フォント・解析タグなし）。CSS は `style.css` 1 本です。
 
+## デザイン（v2・2026-10-28）
+
+- デザインの原本は `../design_src_20261028/`（`index.html`・`style.css`。院長が用意したもの。手を入れない控え）。`index.html` は原本に head の技術タグ（CSP・referrer・canonical・OGP・JSON-LD・favicon）、ヒーロー見出しの改行対策（`<span class="line">`）、画像の `width`/`height` だけを足したものです。
+- `style.css` の前半は原本のまま。原本から直した行には `/* v2 fix */` を付けています（ヒーロー見出しの文字サイズと改行、重ねカードの文字位置・幅・文字サイズ）。
+- アプリページ（`apps/*.html`）と `404.html` の CSS は、`style.css` 末尾の `/* ---- app pages (v2) ---- */` 以降にまとめています。色・書体・罫線・ピル・下線リンクは原本のトークンとクラス（`.eyebrow`・`.platforms`・`.hero-link`・`.detail-link`・`.about-copy`）を使い回しています。
+- `img/favicon.svg` は原本のブランドマーク（`.brand-mark`）に合わせた、深緑 `#18332f` の円にクリーム `#fffefb` の Georgia 斜体「g」です。
+- 見出しや文言を直すときは、まず原本の調子（です・ます、明朝の見出し、アプリ名は Georgia）に合わせてください。
+
 ## ファイル構成
 
 - `index.html` … アプリ一覧（ハブ）
 - `apps/<slug>.html` … アプリごとのページ（custodia／cria／d-plot／stockage／laborder／dental-cloud-share）
-- `style.css` … 共通スタイル
+- `style.css` … 共通スタイル（前半＝原本、末尾＝アプリページ用の v2 ブロック）
 - `img/<slug>.webp`・`img/<slug>.jpg` … PR 画像（1600 幅）。`img/favicon.svg` … ファビコン
 - `sitemap.xml`・`robots.txt`・`404.html`・`.nojekyll`
 
@@ -29,9 +37,9 @@ sips -g pixelWidth -g pixelHeight img/<slug>.jpg
 
 ## アプリの追加
 
-1. `apps/` の既存ページを 1 つ複製して `apps/<新slug>.html` にし、title・description・canonical・OGP・JSON-LD・本文を書き換える（description は 80〜120 字・ページごとに固有）。
-2. `index.html` のアプリ一覧にカードを 1 枚足す。
-3. 各アプリページの「他のアプリ」に名前リンクを足す。
+1. `apps/` の既存ページを 1 つ複製して `apps/<新slug>.html` にし、title（「アプリ名｜一言｜greenhills-dc」）・description・canonical・OGP・JSON-LD・本文・`.eyebrow` の番号を書き換える（description は 80〜120 字・ページごとに固有）。
+2. `index.html` のアプリ一覧にカード（`article.app-card`）を 1 枚足す。画像の `<img>` には `width`/`height` を実寸で付ける。
+3. 各アプリページの「他のアプリ」帯（`.other-list`）に行を足す（番号・名前・キッカー・くわしく見る）。
 4. `sitemap.xml` に `<url>` を 1 行足す。
 
 ## sitemap の lastmod

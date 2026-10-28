@@ -1,28 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'">
-<meta name="referrer" content="strict-origin-when-cross-origin">
-<title>D-PLoT - 写真フォルダから、規格写真を一括生成。 ｜ greenhills-dc</title>
-<meta name="description" content="D-PLoT（口腔内規格写真プロッター）は、写真フォルダから口腔内規格写真を一括生成するMacアプリです。撮影順をプリセットで登録し、12枚法・9枚法・4枚法などを同時に生成します。App Storeで無料です。">
-<link rel="canonical" href="https://greenhills-dc.github.io/apps/d-plot.html">
-<!-- Search Console の HTML タグをここに貼る -->
-<!-- <meta name="google-site-verification" content=""> -->
-<meta property="og:type" content="article">
-<meta property="og:title" content="D-PLoT - 写真フォルダから、規格写真を一括生成。 ｜ greenhills-dc">
-<meta property="og:description" content="D-PLoT（口腔内規格写真プロッター）は、写真フォルダから口腔内規格写真を一括生成するMacアプリです。撮影順をプリセットで登録し、12枚法・9枚法・4枚法などを同時に生成します。App Storeで無料です。">
-<meta property="og:url" content="https://greenhills-dc.github.io/apps/d-plot.html">
-<meta property="og:site_name" content="greenhills-dc">
-<meta property="og:locale" content="ja_JP">
-<meta property="og:image" content="https://greenhills-dc.github.io/img/d-plot.jpg">
-<meta property="og:image:width" content="1600">
-<meta property="og:image:height" content="900">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="../style.css">
-<script type="application/ld+json">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>D-PLoT｜写真フォルダから、規格写真を一括生成。｜greenhills-dc</title>
+  <meta name="description" content="D-PLoT（口腔内規格写真プロッター）は、写真フォルダから口腔内規格写真を一括生成するMacアプリです。撮影順をプリセットで登録し、12枚法・9枚法・4枚法などを同時に生成します。App Storeで無料です。">
+  <link rel="canonical" href="https://greenhills-dc.github.io/apps/d-plot.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="D-PLoT｜写真フォルダから、規格写真を一括生成。｜greenhills-dc">
+  <meta property="og:description" content="D-PLoT（口腔内規格写真プロッター）は、写真フォルダから口腔内規格写真を一括生成するMacアプリです。撮影順をプリセットで登録し、12枚法・9枚法・4枚法などを同時に生成します。App Storeで無料です。">
+  <meta property="og:url" content="https://greenhills-dc.github.io/apps/d-plot.html">
+  <meta property="og:site_name" content="greenhills-dc">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="https://greenhills-dc.github.io/img/d-plot.jpg">
+  <meta property="og:image:width" content="1600">
+  <meta property="og:image:height" content="900">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -42,58 +40,77 @@
     "url": "https://greenhills-dc.github.io/"
   }
 }
-</script>
+  </script>
 </head>
 <body>
-<a class="skip" href="#main">本文へ移動</a>
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a class="site-name" href="../index.html">greenhills-dc</a>
-    <nav aria-label="サイト内">
-      <a href="../index.html#apps">アプリ一覧</a>
-      <a href="mailto:support@greenhills-dc.org">お問い合わせ</a>
+  <a class="skip-link" href="#main">本文へ移動</a>
+
+  <header class="site-header">
+    <a class="brand" href="../index.html" aria-label="greenhills-dc ホーム">
+      <span class="brand-mark" aria-hidden="true">g</span>
+      <span>greenhills-dc</span>
+    </a>
+    <nav class="site-nav" aria-label="サイト内">
+      <a href="../index.html#apps">アプリ</a>
+      <a href="../index.html#about">このサイトについて</a>
     </nav>
-  </div>
-</header>
-<main id="main" class="wrap">
-  <section class="app-hero">
-    <p class="eyebrow">口腔内規格写真プロッター</p>
-    <h1>D-PLoT（口腔内規格写真プロッター）</h1>
-    <picture class="hero-media"><source srcset="../img/d-plot.webp" type="image/webp" width="1600" height="900"><img src="../img/d-plot.jpg" width="1600" height="900" alt="D-PLoT — 写真フォルダから、規格写真を一括生成。"></picture>
-    <p class="lead">写真フォルダから、規格写真を一括生成。</p>
-    <ul class="badges" aria-label="対応プラットフォーム"><li class="badge">Mac</li><li class="badge badge-price">無料</li></ul>
-  </section>
-  <section class="card" aria-labelledby="can-h">
-    <h2 id="can-h">できること</h2>
-    <ul><li>撮影順をプリセットとして登録（13 枚法など）</li><li>フォルダごと取り込み（回転・反転の事前補正は不要）</li><li>12 枚法・9 枚法・4 枚法など複数の規格写真を同時に生成</li></ul>
-  </section>
-  <section class="card" aria-labelledby="env-h">
-    <h2 id="env-h">対応環境</h2>
-    <table class="env"><tbody><tr><th scope="row">Mac</th><td>App Store（無料）</td></tr></tbody></table>
-  </section>
-  <section class="card" aria-labelledby="get-h">
-    <h2 id="get-h">入手・お申し込み</h2>
-    <div class="actions">
-      <a class="btn" href="https://apps.apple.com/jp/app/d-plot-%E5%8F%A3%E8%85%94%E5%86%85%E8%A6%8F%E6%A0%BC%E5%86%99%E7%9C%9F%E3%83%97%E3%83%AD%E3%83%83%E3%82%BF%E3%83%BC/id6759985447?mt=12">App Store（Mac）</a>
+  </header>
+
+  <main id="main">
+    <section class="app-hero" aria-labelledby="app-title">
+      <p class="eyebrow">03 — 口腔内規格写真プロッター</p>
+      <h1 id="app-title" class="app-title">D-PLoT <span class="app-catch">写真フォルダから、規格写真を一括生成。</span></h1>
+      <p class="app-lead">写真フォルダから、見やすく整った規格写真をまとめて生成します。</p>
+      <ul class="platforms" aria-label="対応プラットフォーム"><li>Mac</li></ul>
+      <div class="app-actions">
+        <a class="hero-link" href="https://apps.apple.com/jp/app/d-plot-%E5%8F%A3%E8%85%94%E5%86%85%E8%A6%8F%E6%A0%BC%E5%86%99%E7%9C%9F%E3%83%97%E3%83%AD%E3%83%83%E3%82%BF%E3%83%BC/id6759985447?mt=12" rel="noopener">App Store（Mac） <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <figure class="app-visual">
+      <img src="../img/d-plot.webp" width="1600" height="900" alt="D-PLoT — 写真フォルダから、規格写真を一括生成。" loading="eager">
+    </figure>
+
+    <div class="app-sections">
+    <section class="app-section" aria-labelledby="can-h">
+      <h2 id="can-h">できること</h2>
+      <div class="about-copy">
+        <ul class="rule-list"><li>撮影順をプリセットとして登録（13 枚法など）</li><li>フォルダごと取り込み（回転・反転の事前補正は不要）</li><li>12 枚法・9 枚法・4 枚法など複数の規格写真を同時に生成</li></ul>
+      </div>
+    </section>
+    <section class="app-section" aria-labelledby="env-h">
+      <h2 id="env-h">対応環境</h2>
+      <div class="about-copy">
+        <dl><div><dt>名称</dt><dd>D-PLoT（口腔内規格写真プロッター）</dd></div><div><dt>Mac</dt><dd>App Store（無料）</dd></div></dl>
+      </div>
+    </section>
+    <section class="app-section" aria-labelledby="get-h">
+      <h2 id="get-h">入手・お申し込み</h2>
+      <div class="about-copy">
+        <ul class="link-list"><li><a class="detail-link" href="https://apps.apple.com/jp/app/d-plot-%E5%8F%A3%E8%85%94%E5%86%85%E8%A6%8F%E6%A0%BC%E5%86%99%E7%9C%9F%E3%83%97%E3%83%AD%E3%83%83%E3%82%BF%E3%83%BC/id6759985447?mt=12" rel="noopener">App Store（Mac） <span aria-hidden="true">↗</span></a></li></ul>
+      </div>
+    </section>
+    <section class="app-section" aria-labelledby="sup-h">
+      <h2 id="sup-h">サポート・プライバシー</h2>
+      <div class="about-copy">
+        <ul class="link-list"><li><a class="detail-link" href="https://greenhills-dc.github.io/d-plot-support/" rel="noopener">サポート <span aria-hidden="true">↗</span></a></li><li><a class="detail-link" href="https://greenhills-dc.github.io/d-plot-support/privacy.html" rel="noopener">プライバシーポリシー <span aria-hidden="true">↗</span></a></li></ul>
+      </div>
+    </section>
     </div>
-  </section>
-  <section class="card" aria-labelledby="sup-h">
-    <h2 id="sup-h">サポート・プライバシー</h2>
-    <ul class="links"><li><a href="https://greenhills-dc.github.io/d-plot-support/">サポート</a></li><li><a href="https://greenhills-dc.github.io/d-plot-support/privacy.html">プライバシーポリシー</a></li></ul>
-  </section>
-  <section class="card" aria-labelledby="other-h">
-    <h2 id="other-h">他のアプリ</h2>
-    <ul class="links"><li><a href="custodia.html">Custodia</a></li><li><a href="cria.html">CRIA</a></li><li><a href="stockage.html">Stockage ＆ Stockage Mobile</a></li><li><a href="laborder.html">LabOrder</a></li><li><a href="dental-cloud-share.html">Dental Cloud Share</a></li></ul>
-    <p><a href="../index.html">アプリ一覧へ戻る</a></p>
-  </section>
-</main>
-<footer class="site-footer">
-  <div class="wrap">
-    <p>© 2026 greenhills-dc</p>
-    <p>提供者：greenhills-dc（歯科医師 佐藤長幸）</p>
-    <p>お問い合わせ：<a href="mailto:support@greenhills-dc.org">support@greenhills-dc.org</a>（患者さんの情報は書かないでください）</p>
-    <p>各アプリのプライバシーポリシーは各サポートサイトに掲載しています。</p>
-  </div>
-</footer>
+
+    <section class="other-apps" aria-labelledby="other-h">
+      <div class="other-inner">
+        <p class="eyebrow">OTHER APPLICATIONS</p>
+        <h2 id="other-h">他のアプリ</h2>
+        <ul class="other-list"><li><a href="custodia.html"><span class="other-num">01</span><span class="other-name">Custodia</span><span class="other-kicker">歯科医院統合管理</span><span class="other-more">くわしく見る <span aria-hidden="true">↗</span></span></a></li><li><a href="cria.html"><span class="other-num">02</span><span class="other-name">CRIA</span><span class="other-kicker">う蝕リスク入力支援</span><span class="other-more">くわしく見る <span aria-hidden="true">↗</span></span></a></li><li><a href="stockage.html"><span class="other-num">04</span><span class="other-name">Stockage ＆ Stockage Mobile</span><span class="other-kicker">歯科材料・消耗品の在庫管理</span><span class="other-more">くわしく見る <span aria-hidden="true">↗</span></span></a></li><li><a href="laborder.html"><span class="other-num">05</span><span class="other-name">LabOrder</span><span class="other-kicker">歯科技工指示書管理</span><span class="other-more">くわしく見る <span aria-hidden="true">↗</span></span></a></li><li><a href="dental-cloud-share.html"><span class="other-num">06</span><span class="other-name">Dental Cloud Share</span><span class="other-kicker">歯科クラウド情報共有</span><span class="other-more">くわしく見る <span aria-hidden="true">↗</span></span></a></li></ul>
+        <a class="hero-link other-back" href="../index.html#apps">アプリ一覧へ戻る <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand brand-footer" href="../index.html"><span class="brand-mark" aria-hidden="true">g</span><span>greenhills-dc</span></a>
+    <div><p>Tools shaped by dental practice.</p><p>© 2026 greenhills-dc</p></div>
+  </footer>
 </body>
 </html>
