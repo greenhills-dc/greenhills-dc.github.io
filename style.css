@@ -120,15 +120,22 @@ a { color: inherit; }
 .app-title { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.6rem, 6.4vw, 5.4rem); line-height: 1.08; font-weight: 500; letter-spacing: -.02em; overflow-wrap: break-word; }
 .app-title-sub { font-size: .55em; color: var(--ink-soft); white-space: nowrap; }
 .app-title .app-catch { display: block; margin-top: 1rem; font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; font-size: clamp(1.3rem, 2.4vw, 2.1rem); line-height: 1.45; letter-spacing: -.02em; color: var(--accent); white-space: normal; }
-.app-lead { max-width: 680px; margin: 2rem 0 1.6rem; font-size: clamp(1rem, 1.35vw, 1.15rem); color: var(--ink-soft); }
-.app-hero .platforms { margin-bottom: 2.4rem; }
+.app-lead { max-width: 780px; margin: 2rem 0 1.6rem; font-size: clamp(1rem, 1.35vw, 1.15rem); color: var(--ink-soft); }
+.app-hero .platforms { margin-bottom: 0; }
 .app-hero .platforms li { border-color: var(--line); color: var(--ink-soft); }
-.app-actions { display: flex; flex-wrap: wrap; gap: .6rem 2.4rem; }
-.app-actions .hero-link, .other-back { min-height: 44px; }
+.other-back { min-height: 44px; }
 
-.app-visual { max-width: var(--max); margin: 0 auto; padding: 0 clamp(1.25rem, 4vw, 2rem); }
-.app-visual img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: #fff; border: 1px solid var(--line); border-radius: 4px; }
-.app-note { margin-top: .8rem; color: var(--ink-soft); font-size: .72rem; }
+.app-band { background: var(--ink); color: var(--white); padding: clamp(3rem, 6vw, 5.5rem) clamp(1.25rem, 4vw, 2rem); }
+.app-band + .other-apps { border-top: 1px solid rgba(255,255,255,.14); }
+.app-visual { max-width: var(--max); margin: 0 auto; }
+.app-visual img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: #fff; border-radius: 4px; }
+.app-note { margin-top: .8rem; color: rgba(255,255,255,.62); font-size: .72rem; }
+.band-actions { max-width: var(--max); margin: 2.2rem auto 0; display: flex; flex-wrap: wrap; gap: .6rem 2.4rem; }
+.band-actions .hero-link { min-height: 44px; }
+.band-sub { max-width: var(--max); margin: 1rem auto 0; display: flex; flex-wrap: wrap; align-items: center; gap: 0 1.6rem; font-size: .78rem; }
+.band-sub a { display: inline-flex; align-items: center; min-height: 44px; color: rgba(255,255,255,.72); text-underline-offset: .3rem; }
+.band-sub a:hover { color: var(--mint); }
+.get-lead { margin: 0 0 1.4rem !important; color: var(--ink-soft); }
 
 .app-sections { max-width: var(--max); margin: 0 auto; padding: clamp(3.5rem, 7vw, 6.5rem) clamp(1.25rem, 4vw, 2rem); }
 .app-section { display: grid; grid-template-columns: 1fr 1fr; gap: 9vw; padding: clamp(2.5rem, 4.5vw, 3.8rem) 0; border-top: 1px solid var(--line); }
